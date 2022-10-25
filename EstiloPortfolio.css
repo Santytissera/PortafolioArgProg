@@ -269,6 +269,11 @@ body{
     top: 0;
     left: 0;
     height: 15px;
+    width: 20px;
+}
+
+.skills .contenido-skills .skill .progreso span{
+    font-size: 18px;
 }
 
 .skills .skill .barra span{
@@ -290,7 +295,7 @@ body{
 
 @keyframes javascript{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .html{
@@ -300,7 +305,7 @@ body{
 
 @keyframes html{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 60%;}
 }
 
 .skills .skill .css{
@@ -310,17 +315,17 @@ body{
 
 @keyframes css{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 60%;}
 }
 
-.skills .skill .phyton{
+.skills .skill .python{
     width: 0%;
     animation: 2s python forwards;
 }
 
-@keyframes phyton{
+@keyframes python{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .sql{
@@ -330,7 +335,7 @@ body{
 
 @keyframes sql{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .office{
@@ -340,7 +345,7 @@ body{
 
 @keyframes office{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .trgrup{
@@ -350,7 +355,7 @@ body{
 
 @keyframes trgrup{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .ingles{
@@ -360,7 +365,7 @@ body{
 
 @keyframes ingles{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .dedicacion{
@@ -370,7 +375,17 @@ body{
 
 @keyframes dedicacion{
     0%{width:0%}
-    100%{width: 75%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .coord{
+    width: 0%;
+    animation: 2s coord forwards;
+}
+
+@keyframes coord{
+    0%{width:0%}
+    100%{width: 80%;}
 }
 
 
@@ -510,7 +525,8 @@ body{
     margin-right: 20px;
 }
 
-@media screen and (max-widt:700px) {
+@media screen and (max-widt:910px) {
+
     .sobremi .fila{
         display: block;
     }
