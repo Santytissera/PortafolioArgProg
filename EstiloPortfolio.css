@@ -216,10 +216,9 @@ body{
 
 
 .skills{
-    max-width: 1100px;
-    margin: 10px auto;
-    padding: 50px 20px;
-    align-items: center;
+    margin: 20px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 
@@ -228,14 +227,17 @@ body{
     font-size: 18px;
     font-family: 'Press Start 2P';
     padding: 10px 0;
+    margin-left: 20px;
 }
 
 .skills .fila{
     display: flex;
+
 }
 
 .skills .fila .col{
     width: 50%;
+    padding: 0 20px;
 
 }
 
@@ -247,44 +249,141 @@ body{
     margin-bottom: 15px;
 }
 
-.skills .fila .col .contenido-skills{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skills  .fila .col .contenido-skills .skill{
-    width: 150px;
-    height: 100px;
-    background-color: transparent;
-    border: 1px solid red;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-
-.skills  .fila .col .contenido-skills .skill:hover{
-    background-color: red;
-}
-
-.skills  .fila .col .contenido-skills .skill i{
-    font-size: 25px;
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
     margin-bottom: 10px;
 }
+
+.skills .contenido-skills .barra{
+    height: 15px;
+    width: 80%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .contenido-skills .skill .progreso{
+    background-color: darkred;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+}
+
+.skills .skill .barra span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: darkred;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .phyton{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes phyton{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .office{
+    width: 0%;
+    animation: 2s office forwards;
+}
+
+@keyframes office{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .trgrup{
+    width: 0%;
+    animation: 2s trgrup forwards;
+}
+
+@keyframes trgrup{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .ingles{
+    width: 0%;
+    animation: 2s ingles forwards;
+}
+
+@keyframes ingles{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion{
+    0%{width:0%}
+    100%{width: 75%;}
+}
+
 
 
 
 
 .curriculum{
-    padding: 10px 20px;
+    padding: 30px;
     background-color: black;
 }
 
 .curriculum .contenido-cv{
-    margin: 20px 50px;
+    margin-left: 20px;
     border: 2px solid #2E2E2E;
     border-radius: 10px 20px;
     align-items: center;
@@ -309,8 +408,7 @@ body{
 
 .curriculum .fila .col h3{
     color: yellow;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 23px;
     margin-bottom: 20px;
 }
 
@@ -336,7 +434,7 @@ body{
 }
 
 .contacto .contenedor-contacto{
-    margin: 20px 60px; 
+    margin: 20px 50px; 
     align-items: center;
 }
 
