@@ -1,0 +1,55 @@
+<!-- skills -->
+<section class="skills" id="skills">
+    <div class="contenido-skills">
+        <h2>Skills</h2>
+        <div class="fila">
+            <div class="col">
+                <h3>Conocimientos Técnicos</h3>
+                <ul class="skill-list">
+                    <li *ngFor="let skill of skillList ">
+
+                        <a href="#" class="btn-derecha">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+
+                            <div class="skill">
+                                <span>{{skill.nombre}}</span>   
+                                <div class="barra">
+                                    <div class="progreso">
+                                        <span>{{skill.progreso}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                    </li>
+                </ul>
+
+            </div>
+  
+            <div class="col">
+                <h3>Habilidades Profesionales</h3>
+                    <ul class="soft-list">
+                        <li *ngFor="let soft of softList ">
+
+                            <a href="#" class="btn-derecha">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                                <div class="skill">
+                                    <span>{{soft.nombre}}</span>   
+                                    <div class="barra">
+                                        <div class="progreso">
+                                            <span>{{soft.progreso}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+  </section>

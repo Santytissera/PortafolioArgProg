@@ -1,0 +1,49 @@
+<!-- Sobre mi-->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-sobremi">
+        <div class="fila">
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li *ngFor="let dato of sobremiList">
+
+                        <a href="#">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+
+                        <strong>{{dato.dato}}</strong>
+                        <p>{{dato.info}}</p> 
+                    </li>
+                </ul>
+            </div>
+  
+
+  
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-interes">
+
+                    <ul>
+                        <li *ngFor="let interes of interesList">
+
+                            <a href="#" class="btn-derecha">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <div class="interes">
+                                <i class={{interes.logo}}></i>
+                                <span>{{interes.dato}}</span>   
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+    <button>
+        DESCARGAR CV <i class="fa-solid fa-file-arrow-down"></i>
+        <span class="overlay"></span>
+    </button>     
+  
+  </section>

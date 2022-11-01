@@ -1,0 +1,139 @@
+{
+    
+    "name": "Santiago Tissera",
+    "perfilimg": "https://github.com/Santytissera/PortafolioArgProg/blob/main/Foto%20perfil.jpg?raw=true",
+    "backimg": "https://github.com/Santytissera/PortafolioArgProg/blob/main/R.jpg?raw=true",
+    "position": "Desarrolador Fulls Stack Jr",
+    "ubicacion": {
+        "provincia": "Córdoba",
+        "pais": "Argentina"
+        },
+
+    "datosPersonales":[{
+        "dato":"Fecha de Nacimiento",
+        "info": "24-04-2001"
+    },
+    {
+        "dato":"Teléfono",
+        "info": "3513435769"
+    },
+    {
+        "dato":"E-mail",
+        "info": "santytissera@gmail.com"
+    },
+    {
+        "dato":"Dirección",
+        "info":"Padre Luis Monti 2776"
+
+    }],
+
+    "intereses":[{
+        "logo":"bi bi-music-note-beamed",
+        "dato": "MUSICA"
+    },
+    {   
+        "logo":"bi bi-controller",
+        "dato":"JUEGOS"
+    },
+    {   
+        "logo":"bi bi-airplane-engines",
+        "dato":"VIAJAR"
+    },
+    {   
+        "logo":"bi bi-film",
+        "dato":"PELICULAS"
+    },
+    {   
+        "logo":"fa-solid fa-futbol",
+        "dato":"DEPORTES"
+    }],
+
+
+	"educacion": [{
+        "logo": "#",
+		"titulo": " Ingenieria En Sistemas de Información ",
+		"casa": " Universidad Técnológica Nacional ",
+		"inicio": "2019",
+		"fin": "actualmente"
+	},
+    {
+        "logo" :"#",
+        "titulo": " Tecnico en Computación ",
+		"casa": " Instituto NOA ",
+		"inicio": "2018",
+		"fin": "2018"
+    },
+    {		
+        "logo":"#",
+        "titulo": " Desarrollador Full Stack ",
+        "casa": " Argentina Programa ",
+        "inicio": "2022",
+        "fin": "actualmente"
+    }],
+
+    "experiencia": [{
+        "logo": "#",
+		"puesto": " Ingenieria En Sistemas de Información ",
+		"empresa": " Universidad Técnológica Nacional ",
+		"inicio": "2019",
+		"fin": "actualmente"
+	},
+    {
+        "logo" :"#",
+        "puesto": " Tecnico en Computación ",
+		"empresa": " Instituto NOA ",
+		"inicio": "2018",
+		"fin": "2018"
+    },
+    {		
+        "logo":"#",
+        "puesto": " Desarrollador Full Stack ",
+        "empresa": " Argentina Programa ",
+        "inicio": "2022",
+        "fin": "actualmente"
+    }],
+
+    "skills":[{
+        "nombre":"Javascript",
+        "progreso":"50%"
+    },
+    {
+        "nombre":"Html",
+        "progreso":"60%"
+    },
+    {
+        "nombre":"Css",
+        "progreso":"60%"
+    },
+    {
+        "nombre":"Python",
+        "progreso":"80%"
+    },
+    {
+        "nombre":"SQL",
+        "progreso":"50%"
+    },
+    {
+        "nombre":"OFFICE 365",
+        "progreso":"80%"
+    }
+],
+
+    "soft":[{
+        "nombre":"Trabajo en equipo",
+        "progreso":"70%"
+    },
+    {
+        "nombre":"Dedicacion",
+        "progreso":"90%"
+    },
+    {
+        "nombre":"Coordinacion de actividades",
+        "progreso":"80%"
+    },
+    {
+        "nombre":"Ingles",
+        "progreso":"70%"
+    }]
+
+}

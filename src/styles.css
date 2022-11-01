@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:white
+}
+
+body{
+    background-color: #2E2E2E !important;
+    width: 100%;
+}
+
+.contenedor-header{
+    background-color: black ;
+    width: 100%;
+    line-height:normal !important;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.contenedor-header .fila{
+    display: flex;
+}
+
+.contenedor-header .fila .redes{
+    position: absolute;
+    top: 0;
+    right: 150px;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.contenedor-header button{
+    color: darkred;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid darkred;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contenedor-header button i{
+    margin-left: 5px;
+    margin-top: 5px;
+    color: darkred;
+}
+
+.contenedor-header button:hover{
+    background-color: red;
+    color: black;
+}
+
+.contenedor-header .fila .redes i{
+    margin-left: 15px;
+    font-size: 25px;
+    color: darkred;
+}
+
+
+.contenedor-header header .logo a{
+    color: yellow;
+    font-family:"Press Start 2P";
+    text-decoration:none;
+}
+
+.perfil{
+    border: 2px solid black;
+    margin:20px 50px;
+    border-radius: 10px;
+}
+
+.perfil .portada{
+    display: flex;
+    justify-content: center;
+}
+
+.perfil .portada img{
+    width: 100%;
+    height: 70vh;
+    margin: 20px 10px;
+    border: 2px solid darkred;
+}
+
+.perfil .contenido-seccion .contenedor-img img{
+    border-radius: 50%;
+    border: 2px solid darkred;
+    width: 15%;
+    margin: -100px 20px;
+}
+
+.perfil .contenido-seccion .contenedor-img{
+    display: flex;
+}
+.perfil .contenido-seccion .contenedor-img .control .btn-editar .btn-derecha{
+    font-size: 25px;
+}
+
+
+.perfil .contenido-seccion h4{
+    font-size:21px;
+    line-height:22px;
+    align-items: center;
+    margin: 100px 0 0 50px;
+    font-weight:bold;
+    color: white;
+}
+
+.perfil .contenido-seccion p{
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.perfil button{
+    color:black;
+    margin:0 0 10px 60px;
+    border: 3px solid darkred;
+    background-color: transparent;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.perfil button:hover{
+    background-color: darkred;
+}
+
+
+.sobremi{
+    margin: 20px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.sobremi .contenido-sobremi h3{
+    color:yellow;
+    font-family:"Press Start 2P";
+    font-size:18px;
+    text-decoration:none;
+    margin:15px 20px;
+}
+
+.sobremi .contenido-sobremi .fila{
+    display: flex;
+}
+
+.sobremi .contenido-sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .contenido-sobremi .fila .col ul{
+    list-style:none;
+}
+
+.sobremi .contenido-sobremi .fila .col ul li{
+    margin:20px 20px;
+    font-size:18px;
+}
+
+.sobremi .contenido-sobremi a{
+    margin-left: 300px;
+    font-size:18px;
+}
+
+.sobremi .contenido-sobremi .fila .col ul li strong{
+    display:block; 
+}
+
+.sobremi  .fila .col .contenedor-interes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sobremi  .fila .col .contenedor-interes .interes{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi  .fila .col .contenedor-interes .interes:hover{
+    background-color: red;
+}
+
+.sobremi  .fila .col .contenedor-interes .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}   
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+
+}
+
+
+
+.skills{
+    margin: 20px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.skills h2{
+    color: yellow;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.skills .fila{
+    display: flex;
+
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+
+}
+
+
+.skills h3{
+    font-size: 23px;
+    color: yellow;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills .contenido-skills ul{
+    list-style: none;
+}
+
+.skills a{
+    margin-left: 650px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .contenido-skills .barra{
+    height: 15px;
+    width: 80%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .contenido-skills .skill .progreso{
+    background-color: darkred;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 20px;
+}
+
+.skills .contenido-skills .skill .progreso span{
+    font-size: 18px;
+}
+
+.skills .skill .barra span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: darkred;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript{
+    0%{width:0%}
+    100%{width: 50%;}
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html{
+    0%{width:0%}
+    100%{width: 60%;}
+}
+
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css{
+    0%{width:0%}
+    100%{width: 60%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python{
+    0%{width:0%}
+    100%{width: 80%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql{
+    0%{width:0%}
+    100%{width: 50%;}
+}
+
+.skills .skill .office{
+    width: 0%;
+    animation: 2s office forwards;
+}
+
+@keyframes office{
+    0%{width:0%}
+    100%{width: 80%;}
+}
+
+.skills .skill .trgrup{
+    width: 0%;
+    animation: 2s trgrup forwards;
+}
+
+@keyframes trgrup{
+    0%{width:0%}
+    100%{width: 70%;}
+}
+
+.skills .skill .ingles{
+    width: 0%;
+    animation: 2s ingles forwards;
+}
+
+@keyframes ingles{
+    0%{width:0%}
+    100%{width: 70%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion{
+    0%{width:0%}
+    100%{width: 90%;}
+}
+
+.skills .skill .coord{
+    width: 0%;
+    animation: 2s coord forwards;
+}
+
+@keyframes coord{
+    0%{width:0%}
+    100%{width: 80%;}
+}
+
+
+
+
+
+.curriculum{
+    padding: 30px;
+    background-color: black;
+}
+
+.curriculum .contenido-cv{
+    margin-left: 20px;
+    border: 2px solid #2E2E2E;
+    border-radius: 10px 20px;
+    align-items: center;
+}
+
+.curriculum .contenido-cv h2{
+    color: yellow;
+    font-family: 'Press Start 2P';
+    font-size: 18px;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.curriculum .fila{
+    display: flex;
+}
+
+.curriculum .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3{
+    color: yellow;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.curriculum .fila .col ul{
+    list-style: none;
+}
+
+.curriculum .fila .col .item{
+    font-size: 18px;
+    background-color: #2E2E2E;
+    width: 700px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin: 30px 0;
+    padding: 20px;
+
+}
+
+.curriculum .fila .col .item a{
+    font-size: 18px;
+    margin-left: 600px;
+}
+
+
+.contacto{
+    background:url(https://github.com/Santytissera/PortafolioArgProg/blob/main/fondo-contact.png?raw=true);
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contacto .contenedor-contacto{
+    margin: 20px 50px; 
+    align-items: center;
+}
+
+.contacto .contenedor-contacto h2{
+    color: yellow;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+}
+
+.contacto .contenedor-contacto .fila {
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding:18px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    background-color: #2E2E2E;
+    color: #fff ;
+    font: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}   
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+
+}
+
+.contacto .info ul{
+    list-style: none;
+}
+
+.contacto .info ul li{
+    margin-bottom: 10px;
+
+}
+
+.contacto .info ul li i{
+    color: red;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:910px){
+
+    .sobremi .fila{
+        display: block;
+    }
+
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .curriculum .fila{
+        display: block;
+
+    }
+
+    .curriculum .fila .col{
+        width: 90%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width:1240px){
+
+    .contacto .contenedor-contacto .fila .col iframe{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:590px){
+    
+    .contenedor-header button{
+        display: none;
+    }
+
+    .contenedor-header .fila .redes{
+        display: none;
+    }
+    
+}
+
+form{
+        margin: 20px 650px;
+        width: 800px;
+        border: 4px solid black;
+        border-radius: 10px; 
+        text-align: center;
+        height: 500px;
+}
+
+form .email{
+    margin: 30px 50px;
+}
+
+form .email label{
+  font-size: 21px;
+}
+
+form .password{
+    margin-bottom: 20px;
+    margin-right: 35px;
+}
+
+form .password label{
+    font-size: 21px;
+    margin-left: 40px;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid darkred;
+    margin-bottom: 20px;
+    background-color: #2E2E2E;
+    color: #fff ;
+    font: 18px;
+}
+
+form .password input{
+    margin-left: 20px;
+}
+form button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid darkred;
+    width: fit-content;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}   
+
+form button:hover{
+
+    background-color: darkred;
+
+}

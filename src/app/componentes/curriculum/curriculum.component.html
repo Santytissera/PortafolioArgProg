@@ -1,0 +1,66 @@
+<!-- curriculum -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-cv">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <ul class="edu-list">
+                    <li *ngFor="let educacion of educacionList">
+                        <div class="item">
+                                <div class="logo-container">
+                                    <img class="logo-img" 
+                                     [src]="educacion.logo" 
+                                    />
+                                </div>
+
+                                <div class="item-info">
+                                    <div>
+                                        <h4>{{educacion.titulo}}</h4>
+                                        <span class="casa">{{educacion.casa}}</span>
+                                        <p><time>{{educacion.inicio}}</time> - <time>{{educacion.fin}}</time></p>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn-derecha">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+
+                        </div>
+                    </li>
+
+                </ul> 
+            </div> 
+        
+            <div class="col derecha">
+                <h3>Experiencia Laboral</h3>
+                <ul class="expe-list">
+                    <li *ngFor="let experiencia of experienciaList">
+                        <div class="item">
+                                <div class="logo-container">
+                                    <img class="logo-img" 
+                                     [src]="experiencia.logo" 
+                                    />
+                                </div>
+
+                                <div class="item-info">
+                                    <div>
+                                        <h4>{{experiencia.puesto}}</h4>
+                                        <span class="empresa">{{experiencia.empresa}}</span>
+                                        <p><time>{{experiencia.inicio}}</time> - <time>{{experiencia.fin}}</time></p>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn-derecha">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                        </div>
+                        
+                    </li>
+
+                </ul> 
+            </div>
+        </div>
+    </div>
+  
+  </section>

@@ -1,0 +1,29 @@
+<!-- perfil-->
+<section id="perfil" class="perfil">
+
+    <div class="portada">
+        <img [src]="miPortfolio.backimg">
+    </div>
+  
+  
+    <div class="contenido-seccion">
+        <div class="contenedor-img">
+            <img [src]= "miPortfolio.perfilimg" >
+        
+            <div class="control">
+                <div class="btn-editar">
+                    <a href="#" class="btn-derecha"><i class="bi bi-pencil-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <h4>{{miPortfolio.name}}</h4>
+        <p>{{miPortfolio.cargo}}</p>
+        <p>{{miPortfolio.ubicacion.provincia}},{{miPortfolio.ubicacion.pais}}</p> 
+    </div>
+
+    <button>
+        Añadir Sección
+    </button> 
+  
+  </section>
